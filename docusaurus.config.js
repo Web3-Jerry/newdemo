@@ -13,8 +13,8 @@ const config = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/bitlayer.ico',
-  organizationName: 'Bitlayer', // Usually your GitHub org/user name.
-  projectName: 'Document', // Usually your repo name.
+  organizationName: 'bitlayer-org', // Usually your GitHub org/user name.
+  projectName: 'bitlayer-org.github.io', // Usually your repo name.
 
   presets: [
     [
