@@ -5,43 +5,48 @@ import styles from './styles.module.css';
 const FeatureList = [
   {
     title: 'Learn more about Bitlayer',
+    link: 'https://docs.bitlayer.org/',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Bitlayer pioneers with its BitVM approach to solve the trade-off between security and Turing completeness, enabling a robust Bitcoin layer 2 solution.
+        Bitlayer leads with its innovative BitVM technology, offering a secure and computationally complete solution for enhancing Bitcoin's layer 2 capabilities.
       </>
     ),
   },
   {
     title: 'Faucet',
+    link: 'https://www.bitlayer.org/faucet',
     Svg: require('@site/static/img/logobit.svg').default,
     description: (
       <>
-        Obtain your Bitlayer Testnet tokens every 24 hours for development here.
+        Access Bitlayer's Testnet tokens every 24 hours and accelerate your development process with reliable testing resources.
       </>
     ),
   },
   {
     title: 'Testnet Scan',
+    link: 'https://testnet-scan.bitlayer.org/en-us/',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        A essential tool for exploring and analyzing blockchain data on the testnet. You can dive deep into the testnet's transactions, blocks, and addresses.
+        Discover and analyze blockchain data with our Testnet Scan, your go-to tool for inspecting transactions, blocks, and addresses in detail on the testnet.
       </>
     ),
   },
 ];
 
-function Feature({Svg, title, description}) {
+function Feature({Svg, title, link, description}) {
   return (
     <div className={clsx('col col--4')}>
-      <div className="text--center">
-        <Svg className={styles.featureSvg} alt={title} />
-      </div>
-      <div className="text--center padding-horiz--md">
-        <h3>{title}</h3>
-        <p>{description}</p>
-      </div>
+      <a href={link} className={styles.featureLink}>
+        <div className="text--center">
+          <Svg className={styles.featureSvg} alt={title} />
+        </div>
+        <div className="text--center padding-horiz--md">
+          <h3>{title}</h3>
+          <p>{description}</p>
+        </div>
+      </a>
     </div>
   );
 }
