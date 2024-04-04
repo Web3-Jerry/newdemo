@@ -38,15 +38,15 @@ const FeatureList = [
 function Feature({Svg, title, link, description}) {
   return (
     <div className={clsx('col col--4')}>
-      <a href={link} className={styles.featureLink}>
-        <div className="text--center">
-          <Svg className={styles.featureSvg} alt={title} />
-        </div>
-        <div className="text--center padding-horiz--md">
-          <h3>{title}</h3>
-          <p>{description}</p>
-        </div>
-      </a>
+      <div className="text--center">
+        <Svg className={styles.featureSvg} alt={title} />
+      </div>
+      <div className="text--center padding-horiz--md">
+        <h3>
+          <a href={link}>{title}</a>
+        </h3>
+        <p>{description}</p>
+      </div>
     </div>
   );
 }
