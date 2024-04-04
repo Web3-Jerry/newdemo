@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[906],{673:function(e){e.exports=JSON.parse('{"title":"Build","description":"5 minutes to learn how to build on Bitlayer.","slug":"/category/build","permalink":"/newdemo/docs/category/build","navigation":{"next":{"title":"Testnet User Guide","permalink":"/newdemo/docs/Build/TestnetUserGuide"}}}')}}]);
